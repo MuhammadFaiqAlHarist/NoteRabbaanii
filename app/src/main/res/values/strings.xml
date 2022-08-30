@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NotesApp</string>
+    <string name="judul">Judul</string>
+    <string name="isi_notes">Isi Notes</string>
+</resources>
