@@ -21,7 +21,6 @@
         android:layout_height="wrap_content"
         android:paddingTop="4dp"
         android:text="Notes App"
-        android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
