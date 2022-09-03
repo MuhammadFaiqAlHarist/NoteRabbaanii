@@ -1,12 +1,13 @@
 package com.faiq.notesapp.room
 
+import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.faiq.notesapp.entity.Notes
 
 @Dao
 interface NotesDao {
     @Query("SELECT * FROM notes_table")
-    fun getData() : List<Notes>
+    fun getData() : LiveData<List<Notes>>
 
     @Delete()
     suspend fun deleteData(note : Notes)

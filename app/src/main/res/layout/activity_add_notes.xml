@@ -37,37 +37,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etDeskripsi" />
 
-    <com.google.android.material.button.MaterialButtonToggleGroup
-        android:id="@+id/btnSort"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvPriority">
-
-        <Button
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="High"
-            android:textAllCaps="false" />
-
-        <Button
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Medium"
-            android:textAllCaps="false" />
-
-        <Button
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Low"
-            android:textAllCaps="false" />
-
-    </com.google.android.material.button.MaterialButtonToggleGroup>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_priorities"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:entries="@array/priorities"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvPriority"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnAdd"

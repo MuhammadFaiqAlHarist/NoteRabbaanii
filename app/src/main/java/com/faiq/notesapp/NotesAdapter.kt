@@ -11,7 +11,7 @@ import com.faiq.notesapp.databinding.RowItemJudulBinding
 import com.faiq.notesapp.entity.Notes
 import kotlin.time.measureTimedValue
 
-class NotesAdapter(val context: Context) : RecyclerView.Adapter<NotesAdapter.NotesViewHolder>() {
+class NotesAdapter() : RecyclerView.Adapter<NotesAdapter.NotesViewHolder>() {
 
     class NotesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val binding: RowItemJudulBinding by viewBinding()

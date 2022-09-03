@@ -11,5 +11,5 @@ data class Notes(
     val id: Int,
     val title: String,
     val description: String,
-    val priority : Priority
+//    val priority : Priority
 )
